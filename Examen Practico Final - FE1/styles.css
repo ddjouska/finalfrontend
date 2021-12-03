@@ -137,54 +137,66 @@ h4 {
 }
 
 /*Cards*/
-
-.reviews-container {
+.testimonios {
   display: flex;
-  align-items: center;
   width: 100%;
-  text-align: center;
-  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .cards-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   text-align: center;
   align-items: center;
   height: 254px;
+  position: relative;
 }
 
-.reviews-container .card {
+.cards-container .card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  margin: 10px;
+  width: 445px;
+  height: 254px;
 }
 
 .cards-container .name {
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 16px;
   text-align: center;
 }
-.reviews-container .card-text {
+.cards-container .card-text {
   color: #646464;
-  width: 370px;
-  font-size: 20px;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
-.reviews-container .card-text2 {
+.cards-container .card-text2 {
   color: #646464;
-  width: 370px;
-  font-size: 20px;
+  font-size: 16px;
+  margin-top: 15px;
 }
-
+.foto {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -35px;
+}
 .card-title {
-  font-size: 40px;
+  font-size: 24px;
   color: #232c50;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
+  align-items: center;
+  padding: 0;
 }
 
 .get2 {
@@ -251,36 +263,20 @@ h4 {
   font-size: 30px;
 }
 
-.lista {
-  display: flex;
-}
-
 .list1 {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
   font-weight: lighter;
-  padding-right: 200px;
+  width: 395px;
 }
 .list1 li {
-  font-size: 25px;
+  font-size: 16px;
   padding: 10px;
   font-weight: lighter;
+  margin-right: 50px;
 }
 
-.list2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  color: white;
-  font-weight: lighter;
-}
-.list2 li {
-  font-size: 25px;
-  padding: 10px;
-  font-weight: lighter;
-}
 .iconos {
   display: flex;
   margin-top: 30px;
@@ -483,9 +479,12 @@ h4 {
   }
 
   /*Cards*/
+  .cards-container {
+    text-align: center;
+  }
   .card-title {
     font-size: 35px;
-    margin-left: -60px;
+
     width: 80vh;
   }
   #ali {
@@ -496,7 +495,6 @@ h4 {
   .card-text {
     font-size: 15px;
     width: 20vw;
-    margin-left: -80px;
   }
   #anisha,
   #shanai {
@@ -507,23 +505,33 @@ h4 {
     margin-top: 150px;
     align-items: center;
   }
-
-  /*Footer*/
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  #email {
-    width: max-content;
-  }
   .simplify {
     text-align: center;
     width: 80vw;
     margin-left: 40px;
     font-size: 40px;
+  }
+
+  /*Footer*/
+
+  .footer-first {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+
+  .second-footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 700px;
+  }
+
+  #email {
+    width: max-content;
   }
 
   .formulario {
@@ -536,23 +544,39 @@ h4 {
     align-items: center;
   }
   .rights {
-    display: none;
   }
+
   .iconos {
-    display: none;
-  }
-  .logo2 {
-    display: none;
-  }
-  .second-footer {
-    background-color: black;
-  }
-  .lista {
     display: flex;
-    width: 80vw;
-    flex-direction: column;
+    margin: 30px auto;
+    font-size: 50px;
+    width: 60%;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
   }
-  .list2 {
-    background-color: black;
+  .iconos li {
+    padding: 10px;
+  }
+
+  .logo2 {
+  }
+
+  .list1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+  }
+  .list1 li {
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
   }
 }
