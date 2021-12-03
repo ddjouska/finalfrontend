@@ -350,7 +350,6 @@ h4 {
 
 @media (max-width: 400px) {
   * {
-    display: flex;
     margin: 0;
     padding: 0;
     height: max-content;
@@ -375,7 +374,11 @@ h4 {
   }
   .menu {
     display: inline-block;
-    /* margin-right: -150px; */
+    margin-right: -300px;
+    margin-top: -25px;
+  }
+  .logo {
+    margin-left: -150px;
   }
 
   .firstheader {
@@ -385,9 +388,10 @@ h4 {
     flex-direction: column;
   }
   h1 {
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
-    margin-left: 60px;
+    line-height: 1em;
+    width: 85vw;
   }
   .ilustracion {
     order: -1;
@@ -398,45 +402,151 @@ h4 {
   h4 {
     font-weight: lighter;
     opacity: 40%;
+    text-align: center;
+  }
+  h4 {
+    width: 80vw;
   }
 
   .get {
+    margin-left: 50%;
+    align-items: center;
   }
+  button {
+    text-align: center;
+    justify-content: center;
+  }
+  /*Segunda seccion*/
+
   .secondsection {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
+  .title2 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1em;
+    width: 80vw;
+  }
+  .info {
+    font-weight: lighter;
+    opacity: 40%;
+    text-align: center;
+    width: 80vw;
+  }
 
+  /*About us*/
   .about-us-list {
     flex-direction: column;
   }
+
+  .card-title {
+  }
+  .title123 {
+    width: 50vw;
+    margin-left: -60px;
+  }
+  .description {
+    width: 80vw;
+    margin-left: -130px;
+  }
+
+  #text1::before {
+    content: url(./imagenes/1.svg);
+    width: 70px;
+    height: 20px;
+    margin-left: -100px;
+    padding-right: 45px;
+  }
+
+  #text2::before {
+    content: url(./imagenes/2.svg);
+    width: 70px;
+    height: 20px;
+    margin-left: -100px;
+    padding-right: 45px;
+  }
+
+  #text3::before {
+    content: url(./imagenes/3.svg);
+    width: 70px;
+    height: 45px;
+    margin-left: -100px;
+    padding-right: 45px;
+  }
+
+  /*Cards*/
+  .card-title {
+    font-size: 35px;
+    margin-left: -60px;
+    width: 80vh;
+  }
+  #ali {
+    text-align: center;
+    width: 80vw;
+  }
+
+  .card-text {
+    font-size: 15px;
+    width: 20vw;
+    margin-left: -80px;
+  }
+  #anisha,
+  #shanai {
+    display: none;
+  }
+
+  .get2 {
+    margin-top: 150px;
+    align-items: center;
+  }
+
+  /*Footer*/
+
   .footer {
     display: flex;
     flex-direction: column;
-  }
-  .get .get2,
-  .get3,
-  .get4 {
-    width: max-content;
+    width: 100%;
   }
 
   #email {
     width: max-content;
   }
-  .list1 {
-    padding: 0;
-  }
   .simplify {
-    display: none;
-  }
-  .reviews-container {
-    display: none;
-  }
-  h4 {
+    text-align: center;
     width: 80vw;
+    margin-left: 40px;
+    font-size: 40px;
   }
+
   .formulario {
+    order: -1;
+    display: flex;
+    margin-top: 20px;
+  }
+  .get4 {
+    justify-content: center;
+    align-items: center;
+  }
+  .rights {
     display: none;
+  }
+  .iconos {
+    display: none;
+  }
+  .logo2 {
+    display: none;
+  }
+  .second-footer {
+    background-color: black;
+  }
+  .lista {
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+  }
+  .list2 {
+    background-color: black;
   }
 }
